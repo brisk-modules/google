@@ -1,0 +1,32 @@
+{
+	"name": "brisk-google",
+	"version": "0.0.1",
+	"description": "Bindings to the Google API for Brisk",
+	"author": "makesites",
+	"contributors": [
+		{ "name": "Makis Tracend", "email": "makis@makesit.es" }
+	],
+	"homepage": "http://makesites.org/brisk#modules",
+	"keywords": ["google", "node", "data", "api", "public", "rest", "crud"],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/brisk-modules/google.git"
+	},
+	"bugs": {
+		"url": "https://github.com/brisk-modules/google/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT license",
+			"url": "http://makesites.org/licenses/MIT"
+		}
+	],
+	"engines": { "node": ">=0.8.x" },
+	"main": "index",
+	"dependencies": {
+		"brisk": "0.x",
+		"googleapis": "2.0.4",
+		"passport": "0.x",
+		"passport-google-oauth": "0.2.0",
+	}
+}
