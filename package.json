@@ -1,6 +1,6 @@
 {
 	"name": "brisk-google",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Bindings to the Google API for Brisk",
 	"author": "makesites",
 	"contributors": [
@@ -27,6 +27,6 @@
 		"brisk": "0.x",
 		"googleapis": "2.0.4",
 		"passport": "0.x",
-		"passport-google-oauth": "0.2.0",
+		"passport-google-oauth": "0.2.0"
 	}
 }
