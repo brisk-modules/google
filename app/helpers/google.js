@@ -9,6 +9,8 @@ var helper = Parent.extend({
 		var scope = [];
 		// explode scope keys
 		if( typeof keys == "string" ) keys = keys.split(",");
+		// FIX: include user profile info (mandatory)
+		if( keys.indexOf("plus.login") == -1 ) keys.push("plus.login");
 		for( var i in keys ){
 			var key = keys[i];
 			// check if service exists
