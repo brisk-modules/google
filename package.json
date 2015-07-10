@@ -25,7 +25,7 @@
 	"main": "index",
 	"dependencies": {
 		"brisk": "0.x",
-		"googleapis": "2.0.4",
+		"googleapis": "2.0.6",
 		"passport": "0.x",
 		"passport-google-oauth": "0.2.0"
 	}
