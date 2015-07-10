@@ -1,5 +1,6 @@
 
-var Parent = require('brisk').getClass("main");
+var google = require('googleapis'),
+	Parent = require('brisk').getClass("main");
 
 var helper = Parent.extend({
 
@@ -58,6 +59,23 @@ var helper = Parent.extend({
 				"webmasters.tools" 			: "https://www.google.com/webmasters/tools/feeds/",
 				"youtube" 					: "https://gdata.youtube.com"
 		}
+	},
+
+	auth: function( options ){
+		// prerequisites
+		if( !options.client_id || !options.client_secret ) return null;
+		// variables
+		var OAuth2 = google.auth.OAuth2;
+		// init oauth
+		var auth = new OAuth2( options.client_id, options.client_secret, ( options.redirect_url || "") );
+		// optionally set the access token
+		if( options.access_token ){
+			auth.setCredentials({
+				access_token: options.access_token,
+				refresh_token: ( options.refresh_token || 0 )
+			})
+		}
+		return auth;
 	}
 
 });
