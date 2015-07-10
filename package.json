@@ -1,6 +1,6 @@
 {
 	"name": "brisk-google",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Bindings to the Google API for Brisk",
 	"author": "makesites",
 	"contributors": [
