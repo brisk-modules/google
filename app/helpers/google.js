@@ -76,6 +76,29 @@ var helper = Parent.extend({
 			})
 		}
 		return auth;
+	},
+
+	// returns an api object for the specific service
+	api: function( service ){
+		// partial support... (option for version?)
+		// - complete list: https://github.com/google/google-api-nodejs-client/tree/master/apis
+		switch( service ){
+			case "drive":
+				return google.drive('v2');
+			break;
+			case "plus":
+				return google.plus('v1');
+			break;
+			case "tasks":
+				return google.tasks('v1');
+			break;
+			case "urlshortener":
+				return google.urlshortener('v1');
+			break;
+			default:
+			 	return null;
+			break;
+		}
 	}
 
 });
